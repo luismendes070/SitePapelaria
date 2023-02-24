@@ -10,7 +10,7 @@
 
         <div id="divCadastroCliente">
             <form method="POST" action="cadastroCliente.php">
-                <h1>Você será o nosso mais novo cliente em breve!</h1>
+                <h1>VocÃª serÃ¡ o nosso mais novo cliente em breve!</h1>
 
                 <h2>Cliente</h2>
 
@@ -62,12 +62,12 @@
                 </p>
 
                 <p>
-                    Endereço
+                    EndereÃ§o
                 </p>
                 <p>
                     <input type="text" name="endereco" size="11">
                 </p>    
-                <p>Situação
+                <p>SituaÃ§Ã£o
                     <select name="situacao">
                         <option value="true">Em dias</option>
                         <option value="false">Bloqueado</option>

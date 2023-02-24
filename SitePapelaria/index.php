@@ -8,48 +8,7 @@
     </head>
     <body>
 
-        <?php
-
-        //importa classes de outros pacotes
-        function __autoload($class) {
-
-            // strstr localiza dentro de uma string outra string, no caso "BD", 
-            // porque todas as classes do pacote bd come�am com BD
-            if (strstr($class, "BD")) {
-                require_once("\\bd\\" . $class . ".php");
-            } else if (strstr($class, "C") || strstr($class, "F") || strstr($class, "L") || strstr($class, "P") || strstr($class, "V")) {
-                require_once("\\classes\\" . $class . ".php");
-            } else {
-                require_once("\\paginas\\" . $class . ".php");
-            }
-        }
-
-        $teste = "te sT�";
-
-        /**
-         * Essa fun��o recebe uma string com letras MAI�SCULAS e com
-         * ACENTOS AGUDOS e transforma numa string com letras MIN�SCULAS e SEM ACENTOS AGUDOS
-         * para criar um link para o produto passado por par�metro. 
-         */
-        function geraLinkProduto($teste) {
-
-            $teste = strtolower($teste); //Transforma uma string em letras min�sculas
-            // Sustitui todas as ocorr�ncias de uma string por outra
-            $teste = str_replace(" ", "", $teste);
-            $teste = str_replace("�", "a", $teste);
-            $teste = str_replace("�", "e", $teste);
-            $teste = str_replace("�", "i", $teste);
-            $teste = str_replace("�", "o", $teste);
-            $teste = str_replace("�", "�", $teste);
-
-            return $teste;
-        }
-
-//fim geraLinkProduto
-//echo geraLinkProduto($teste);
-        ?>
-
-        <div id = "tudo">
+    <div id = "tudo">
 
 
             <div id = "logomarcaCabecalho">
@@ -74,13 +33,14 @@
             <ul>
                 <li><a href="http://localhost/SitePapelaria/index.php">Home</a></li>
                 <li><a href="http://localhost/SitePapelaria/paginas/escolar.php">Escolar</a></li>
-                <li><a href="http://localhost/SitePapelaria/paginas/informatica.php">Inform�tica</a></li>
+                <li><a href="http://localhost/SitePapelaria/paginas/informatica.php">Informática</a></li>
                 <li><a href="paginas/contato.html">Contato</a></li>
             </ul>
         </div>        
 
         <div id="divMenuLateral">
             <?php
+            // PHP PDO
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
@@ -118,7 +78,7 @@
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
-                echo "Erro de conex�o";
+                echo "Erro de conexão";
             }
 
             $query = "SELECT * FROM produto ORDER BY nome";
@@ -141,5 +101,42 @@
             ?>
         </div>
     </div>
+
+        <?php
+
+        try {
+
+        $teste = "te sT�";
+
+        /**
+         * Essa fun��o recebe uma string com letras MAI�SCULAS e com
+         * ACENTOS AGUDOS e transforma numa string com letras MIN�SCULAS e SEM ACENTOS AGUDOS
+         * para criar um link para o produto passado por par�metro. 
+         */
+        function geraLinkProduto($teste) {
+
+            $teste = strtolower($teste); //Transforma uma string em letras min�sculas
+            // Sustitui todas as ocorr�ncias de uma string por outra
+            $teste = str_replace(" ", "", $teste);
+            $teste = str_replace("�", "a", $teste);
+            $teste = str_replace("�", "e", $teste);
+            $teste = str_replace("�", "i", $teste);
+            $teste = str_replace("�", "o", $teste);
+            $teste = str_replace("�", "�", $teste);
+
+            return $teste;
+        }
+
+        }catch(Exception $e){
+
+        }finally{
+
+        }
+
+//fim geraLinkProduto
+//echo geraLinkProduto($teste);
+        ?>
+
+        
 </body>
 </html>

@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-BR">
 
     <head>
         <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
@@ -13,7 +13,7 @@
                 $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
                 if ($conexao->connect_errno) {
-                    echo "Erro de conexão";
+                    echo "Erro de conexï¿½o";
                 }
 
                 $query = "SELECT * FROM produto;";
@@ -23,7 +23,7 @@
                 echo '<div id="divProduto">';
                 echo "<table> ";
                 echo "<th>Cod_barras </th>";
-                echo "<th>Descrição</th>";
+                echo "<th>Descriï¿½ï¿½o</th>";
                 echo "<th>Porcentagem</th>";
                 echo "<th>Qtde_estoque </th>";
                 echo "<th>Nome</th>";

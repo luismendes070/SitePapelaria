@@ -8,7 +8,7 @@
 /**
  * Description of BancoDeDados
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class BDVenda implements BD{
 

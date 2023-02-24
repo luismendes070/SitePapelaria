@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <title></title>
@@ -5,8 +6,6 @@
         <link rel="stylesheet" type="text/css" href="http://localhost/SitePapelaria/css/estilo.css">
     </head>
     <body>
-
-
 
         <?php
         require_once 'file:///c:/xampp/htdocs/SitePapelaria/bd/BDProduto.php';

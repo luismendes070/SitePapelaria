@@ -8,9 +8,9 @@
 /**
  * Description of BancoDeDados
  *
- * @author Lu�s Mendes
+ * @author LuIs Mendes
  */
-require_once 'file:///c:/xampp/htdocs/SitePapelaria/bd/Bd.php';
+require_once 'file:///c:/xampp/htdocs/SitePapelaria/bd/BD.php';
 require_once 'C:\xampp\htdocs\SitePapelaria\classes\Produto.php';
 
 class BDProduto implements BD {
@@ -62,7 +62,7 @@ VALUES ";
 
         $conexao->query($query);
 
-        echo "Novo produto inclu�do com sucesso!!!";
+        echo "Novo produto incluído com sucesso!!!";
 
         $conexao->close();
     }

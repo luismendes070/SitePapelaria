@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-BR">
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -16,7 +16,7 @@
                 $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
                 if ($conexao->connect_errno) {
-                    echo "Erro de conexão";
+                    echo "Erro de conexÃ£o";
                 }
 
                 $palavra = "drive";
@@ -28,13 +28,13 @@
 
                     while ($row = $result->fetch_array()) {
 
-                        echo "Código: ";
+                        echo "CÃ³digo: ";
                         printf(" %s", $row[0]);
                         echo "<br>";
 
                         #$codigoBarrasProduto = $row[0];
 
-                        echo "Descrição: ";
+                        echo "DescriÃ§Ã£o: ";
                         printf(" %s", $row[1]);
                         echo "<br>";
 
@@ -42,7 +42,7 @@
                         printf(" %s", $row[6]);
                         echo "<br>";
 
-                        echo "Preço: ";
+                        echo "PreÃ§o: ";
                         printf(" %s", $row[7]);
                         echo "<br>";
                     }

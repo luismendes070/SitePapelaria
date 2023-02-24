@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-BR">
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -11,16 +11,16 @@
             <form method="POST" action="comprar.php">
 
                 <img src="http://localhost/SitePapelaria/imagens/produtos/papelsulfite.jpg" 
-                     alt="Caneta esferográfica" width="180" height="180">
+                     alt="Caneta esferogrï¿½fica" width="180" height="180">
 
                 <?php
                 $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
                 if ($conexao->connect_errno) {
-                    echo "Erro de conexão";
+                    echo "Erro de conexï¿½o";
                 }
 
-                $palavra = "caderno universitário";
+                $palavra = "caderno universitï¿½rio";
                 $query = "SELECT * FROM produto WHERE nome LIKE '%" . $palavra . "%' ORDER BY nome";
 
                 $codigoBarrasProduto;
@@ -29,13 +29,13 @@
 
                     while ($row = $result->fetch_array()) {
                         
-                        echo "Código: ";
+                        echo "Cï¿½digo: ";
                         printf(" %s", $row[0]);
                         echo "<br>";
                         
                         #$codigoBarrasProduto = $row[0];
                         
-                        echo "Descrição: ";
+                        echo "Descriï¿½ï¿½o: ";
                         printf(" %s", $row[1]);
                         echo "<br>";
                         
@@ -43,7 +43,7 @@
                         printf(" %s", $row[6]);
                         echo "<br>";
                         
-                        echo "Preço: ";
+                        echo "Preï¿½o: ";
                         printf(" %s", $row[7]);
                         echo "<br>";
                     }
