@@ -17,7 +17,7 @@ class BDVendaAPrazo implements BD{
         if ($classe instanceof VendaAPrazo) {
             
         } else {
-            echo $classe . " n�o � inst�ncia de VendaAPrazo";
+            echo $classe . " não é instância de VendaAPrazo";
         }
     }
 

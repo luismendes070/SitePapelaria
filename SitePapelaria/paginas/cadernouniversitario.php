@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -7,8 +8,6 @@
     <body>
 
         <div id="divProdutoQualquer">
-
-
 
             <img src="http://localhost/SitePapelaria/imagens/produtos/cadernouniversitariocapadura.jpg" 
                  alt="Caderno universitário capa dura " width="180" height="180">

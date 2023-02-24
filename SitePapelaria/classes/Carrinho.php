@@ -10,7 +10,7 @@ require_once 'file:///c:/xampp/htdocs/SitePapelaria/classes/Produto.php';
 /**
  * Description of Carrinho
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class Carrinho {
 
@@ -51,14 +51,14 @@ class Carrinho {
         foreach ($this->produtos as $p) {
             $retorno . "
                 
-            Código de barras: $p->getCodBarras();
-            Descrição: $descricao->getDescricao();
+            CÃ³digo de barras: $p->getCodBarras();
+            DescriÃ§Ã£o: $descricao->getDescricao();
             Porcentagem: $porcentagem->getPorcentagem();
             Valor custo: $valorCusto->getValorCusto();
             Quantidade em estoque: $qtdeEstoque->getQtdeEstoque();
             Nome: $nome->getNome();
             Marca: $marca->getMarca();
-            Preço de venda: $precoVenda->getPrecoVenda();
+            PreÃ§o de venda: $precoVenda->getPrecoVenda();
                 ";
         }
         echo $retorno;

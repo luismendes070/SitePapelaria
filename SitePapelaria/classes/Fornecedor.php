@@ -8,7 +8,7 @@
 /**
  * Description of Fornecedor
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class Fornecedor {
     
@@ -68,7 +68,7 @@ class Fornecedor {
 
 
     
-}//fim da classe Funcionario
+}// end class Fornecedor
 
 
 ?>

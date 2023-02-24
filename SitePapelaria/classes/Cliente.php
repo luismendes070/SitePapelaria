@@ -8,7 +8,7 @@
 /**
  * Description of Cliente
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class Cliente {
     
@@ -123,14 +123,6 @@ class Cliente {
         $this->nomeImagem = $nomeImagem;
     }
 
-
-
-
-
-    
-    
-    
-
-}
+} // end class Cliente
 
 ?>

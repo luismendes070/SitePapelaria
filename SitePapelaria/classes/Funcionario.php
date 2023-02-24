@@ -8,7 +8,7 @@
 /**
  * Description of Funcionario
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class Funcionario {
     
@@ -23,7 +23,8 @@ class Funcionario {
         $this->cpf = $cpf;
         $this->telefone = $telefone;
         $this->login = $login;
-        $this->senha = $senha;
+        // openssl_encrypt https://www.php.net/manual/en/function.openssl-encrypt.php
+        $this->senha = $senha; 
     }// fim do construtor
 
     public function getNome() {
@@ -68,15 +69,15 @@ class Funcionario {
 
     public function fazPedido(){
         
-        echo "Método faz Pedido";
+        echo "MÃ©todo faz Pedido";
         
-    }//fim do método faz pedido
+    }// fim do mÃ©todo fazPedido
     
     public function atualizaProdutos($quantidadeEmEstoque) {
-        echo "Método atualiza Produtos";
+        echo "MÃ©todo atualiza Produtos";
     }
     
     
-}// fim da classe
+}// end class Funcionario
 
 ?>

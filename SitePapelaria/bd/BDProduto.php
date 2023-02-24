@@ -8,7 +8,7 @@
 /**
  * Description of BancoDeDados
  *
- * @author LuÌs Mendes
+ * @author LuÔøΩs Mendes
  */
 require_once 'file:///c:/xampp/htdocs/SitePapelaria/bd/Bd.php';
 require_once 'C:\xampp\htdocs\SitePapelaria\classes\Produto.php';
@@ -27,7 +27,7 @@ class BDProduto implements BD {
         $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
         if ($conexao->connect_errno) {
-            echo "Erro de conex„o";
+            echo "Erro de conex√£o";
         }
 
         $query = "INSERT INTO papelaria2.produto (
@@ -62,7 +62,7 @@ VALUES ";
 
         $conexao->query($query);
 
-        echo "Novo produto incluÌdo com sucesso!!!";
+        echo "Novo produto incluÔøΩdo com sucesso!!!";
 
         $conexao->close();
     }
@@ -78,7 +78,7 @@ VALUES ";
         $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
         if ($conexao->connect_errno) {
-            echo "Erro de conex„o";
+            echo "Erro de conex√£o";
         }
 
         $query = "SELECT * FROM produto WHERE nome LIKE '%" . $palavra . "%' ORDER BY nome";
@@ -117,7 +117,7 @@ VALUES ";
         $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
         if ($conexao->connect_errno) {
-            echo "Erro de conex„o";
+            echo "Erro de conex√£o";
         }
 
         $query = "SELECT * FROM produto where cod_barras = " . $codBarras;
