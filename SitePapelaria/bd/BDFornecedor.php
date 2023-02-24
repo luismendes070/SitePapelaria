@@ -8,7 +8,7 @@
 /**
  * Description of BancoDeDados
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 require_once 'file:///c:/xampp/htdocs/SitePapelaria/bd/Bd.php';
 
@@ -26,7 +26,7 @@ class BDFornecedor implements BD {
         $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
         if ($conexao->connect_errno) {
-            echo "Erro de conexão";
+            echo "Erro de conexÃ£o";
         }
 
         $query = "INSERT INTO papelaria2.fornecedor (
@@ -54,7 +54,7 @@ VALUES ";
 
         $conexao->query($query);
 
-        echo "Novo fornecedor incluído com sucesso!!!";
+        echo "Novo fornecedor incluï¿½do com sucesso!!!";
 
         $conexao->close();
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <title>Papelaria Web II</title>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -14,7 +14,7 @@
         function __autoload($class) {
 
             // strstr localiza dentro de uma string outra string, no caso "BD", 
-            // porque todas as classes do pacote bd começam com BD
+            // porque todas as classes do pacote bd comeï¿½am com BD
             if (strstr($class, "BD")) {
                 require_once("\\bd\\" . $class . ".php");
             } else if (strstr($class, "C") || strstr($class, "F") || strstr($class, "L") || strstr($class, "P") || strstr($class, "V")) {
@@ -24,23 +24,23 @@
             }
         }
 
-        $teste = "te sTé";
+        $teste = "te sTï¿½";
 
         /**
-         * Essa função recebe uma string com letras MAIÚSCULAS e com
-         * ACENTOS AGUDOS e transforma numa string com letras MINÚSCULAS e SEM ACENTOS AGUDOS
-         * para criar um link para o produto passado por parâmetro. 
+         * Essa funï¿½ï¿½o recebe uma string com letras MAIï¿½SCULAS e com
+         * ACENTOS AGUDOS e transforma numa string com letras MINï¿½SCULAS e SEM ACENTOS AGUDOS
+         * para criar um link para o produto passado por parï¿½metro. 
          */
         function geraLinkProduto($teste) {
 
-            $teste = strtolower($teste); //Transforma uma string em letras minúsculas
-            // Sustitui todas as ocorrências de uma string por outra
+            $teste = strtolower($teste); //Transforma uma string em letras minï¿½sculas
+            // Sustitui todas as ocorrï¿½ncias de uma string por outra
             $teste = str_replace(" ", "", $teste);
-            $teste = str_replace("á", "a", $teste);
-            $teste = str_replace("é", "e", $teste);
-            $teste = str_replace("í", "i", $teste);
-            $teste = str_replace("ó", "o", $teste);
-            $teste = str_replace("ú", "í", $teste);
+            $teste = str_replace("ï¿½", "a", $teste);
+            $teste = str_replace("ï¿½", "e", $teste);
+            $teste = str_replace("ï¿½", "i", $teste);
+            $teste = str_replace("ï¿½", "o", $teste);
+            $teste = str_replace("ï¿½", "ï¿½", $teste);
 
             return $teste;
         }
@@ -74,7 +74,7 @@
             <ul>
                 <li><a href="http://localhost/SitePapelaria/index.php">Home</a></li>
                 <li><a href="http://localhost/SitePapelaria/paginas/escolar.php">Escolar</a></li>
-                <li><a href="http://localhost/SitePapelaria/paginas/informatica.php">Informática</a></li>
+                <li><a href="http://localhost/SitePapelaria/paginas/informatica.php">Informï¿½tica</a></li>
                 <li><a href="paginas/contato.html">Contato</a></li>
             </ul>
         </div>        
@@ -84,7 +84,7 @@
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
-                echo "Erro de conexão";
+                echo "Erro de conexÃ£o";
             }
 
             $query = "SELECT nome FROM produto ORDER BY nome DESC;";
@@ -118,7 +118,7 @@
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
-                echo "Erro de conexão";
+                echo "Erro de conexï¿½o";
             }
 
             $query = "SELECT * FROM produto ORDER BY nome";

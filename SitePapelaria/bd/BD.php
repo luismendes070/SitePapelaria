@@ -7,7 +7,7 @@
 
 /**
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 interface BD {
 

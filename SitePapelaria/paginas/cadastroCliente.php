@@ -9,7 +9,7 @@
         $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
         if ($conexao->connect_errno) {
-            echo "Erro de conexão";
+            echo "Erro de conexÃ£o";
         }
 
         function buscaCPFCadastrado($cpf) {
@@ -19,7 +19,7 @@
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
-                echo "Erro de conexão";
+                echo "Erro de conexÃ£o";
             }
 
             $query = 'SELECT * FROM cliente WHERE cpf ="' . $cpf . '";';
@@ -43,13 +43,13 @@
             return $resp;
         }
 
-#fim da função buscaCPFCadastrado
+#fim da funï¿½ï¿½o buscaCPFCadastrado
 
         $cpf = $_POST["cpf"];
 
         if (buscaCPFCadastrado($cpf)) {
 
-            echo '<h1>Seu CPF já está cadastrado!<h1>';
+            echo '<h1>Seu CPF jÃ¡ estÃ¡ cadastrado!<h1>';
         } else {
             $data_cadastro = $_POST["dataCadastro"];
             $data_nascimento = $_POST["dataNascimento"];
@@ -107,7 +107,7 @@
 
             if ($result = $conexao->query($query)) {
 
-                echo '<h1>Agora você já é nosso cliente!<h1>';
+                echo '<h1>Agora vocÃª jÃ¡ Ã© nosso cliente!<h1>';
             } else {
                 echo '<h1>Erro!<h1>';
             }

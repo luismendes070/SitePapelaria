@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-BR">
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -15,11 +15,11 @@
 
         $teste = strtolower($teste);
         $teste = str_replace(" ", "", $teste);
-        $teste = str_replace("á", "a", $teste);
-        $teste = str_replace("é", "e", $teste);
-        $teste = str_replace("í", "i", $teste);
-        $teste = str_replace("ó", "o", $teste);
-        $teste = str_replace("ú", "í", $teste);
+        $teste = str_replace("ï¿½", "a", $teste);
+        $teste = str_replace("ï¿½", "e", $teste);
+        $teste = str_replace("ï¿½", "i", $teste);
+        $teste = str_replace("ï¿½", "o", $teste);
+        $teste = str_replace("ï¿½", "ï¿½", $teste);
 
         return $teste;
         }
@@ -43,7 +43,7 @@
 
 
         echo "<br>";
-        echo "Código: ";
+        echo "CÃ³digo: ";
         printf(" %s", $i->getCodBarras());
         echo "<br>";
 
@@ -51,7 +51,7 @@
         printf(" %s", $i->getNome());
         echo "<br>";
 
-        echo "Descrição: ";
+        echo "DescriÃ§Ã£o: ";
         printf(" %s", $i->getDescricao());
         echo "<br>";
 
@@ -59,7 +59,7 @@
         printf(" %s", $i->getMarca());
         echo "<br>";
 
-        echo "Preço: ";
+        echo "PreÃ§o: ";
         printf(" %s", $i->getPrecoVenda());
         echo "<br>";
         }

@@ -8,7 +8,7 @@
 /**
  * Description of BancoDeDados
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class BDVendaAPrazo implements BD{
 
@@ -17,7 +17,7 @@ class BDVendaAPrazo implements BD{
         if ($classe instanceof VendaAPrazo) {
             
         } else {
-            echo $classe . " não é instância de VendaAPrazo";
+            echo $classe . " nï¿½o ï¿½ instï¿½ncia de VendaAPrazo";
         }
     }
 

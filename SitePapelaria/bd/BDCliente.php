@@ -8,14 +8,14 @@
 /**
  * Description of BancoDeDados
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class BDCliente implements BD{
      
       function __construct($classe){
         
         
-    }
+    } // empty constructor
 
     public function alterar() {
         

@@ -12,10 +12,10 @@
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
-                echo "Erro de conexão";
+                echo "Erro de conexÃ£o";
             }
 
-            $query = "SELECT * FROM produto WHERE categoria like 'escritório' ORDER BY nome";
+            $query = "SELECT * FROM produto WHERE categoria like 'escritÃ³rio' ORDER BY nome";
 
             if ($result = $conexao->query($query)) {
 

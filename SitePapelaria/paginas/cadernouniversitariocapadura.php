@@ -10,17 +10,17 @@
 
 
             <img src="http://localhost/SitePapelaria/imagens/produtos/cadernouniversitariocapadura.jpg" 
-                 alt="Caderno universitário capa dura " width="180" height="180">
+                 alt="Caderno universitÃ¡rio capa dura " width="180" height="180">
 
             <form method="GET" action="carrinho.php">
                 <?php
                 $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
                 if ($conexao->connect_errno) {
-                    echo "Erro de conexão";
+                    echo "Erro de conexï¿½o";
                 }
 
-                $palavra = "caderno universitário";
+                $palavra = "caderno universitï¿½rio";
                 $query = "SELECT * FROM produto WHERE nome LIKE '%" . $palavra . "%' ORDER BY nome";
 
                 $codigoBarrasProduto = "123456";
@@ -29,14 +29,14 @@
 
                     while ($row = $result->fetch_array()) {
 
-                        echo "Código: ";
+                        echo "Cï¿½digo: ";
                         printf(" %s", $row[0]);
                         $cod = $row[0];
                         echo "<br>";
 
                         $codigoBarrasProduto = $row[0];
 
-                        echo "Descrição: ";
+                        echo "Descriï¿½ï¿½o: ";
                         printf(" %s", $row[1]);
                         echo "<br>";
 
@@ -44,7 +44,7 @@
                         printf(" %s", $row[6]);
                         echo "<br>";
 
-                        echo "Preço: ";
+                        echo "Preï¿½o: ";
                         printf(" %s", $row[7]);
                         echo "<br>";
                     }

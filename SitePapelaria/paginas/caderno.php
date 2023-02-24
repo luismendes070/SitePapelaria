@@ -3,7 +3,7 @@ To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <title></title>
         
@@ -12,7 +12,7 @@ and open the template in the editor.
     </head>
     <body>
         <div>
-            <img src="file:///C:/xampp/htdocs/SitePapelaria/imagens/produtos/cadernouniversitariocapadura.jpg" alt="Caderno universitário capa dura" width="180" height="180">
+            <img src="file:///C:/xampp/htdocs/SitePapelaria/imagens/produtos/cadernouniversitariocapadura.jpg" alt="Caderno universitï¿½rio capa dura" width="180" height="180">
         </div>
     </body>
 </html>

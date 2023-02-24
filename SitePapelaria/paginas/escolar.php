@@ -12,7 +12,7 @@
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
-                echo "Erro de conex„o";
+                echo "Erro de conex√£o";
             }
 
             $query = "SELECT * FROM produto WHERE categoria like 'escolar' ORDER BY nome";
