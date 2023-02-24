@@ -8,7 +8,7 @@
 /**
  * Description of Loja
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class Loja {
     

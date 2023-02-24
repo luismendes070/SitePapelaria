@@ -8,7 +8,7 @@
 /**
  * Description of Venda
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class Venda {
      
@@ -72,7 +72,7 @@ class Venda {
     }
     
     public function vender() {
-        echo "método vender da classe Venda";
+        echo "mï¿½todo vender da classe Venda";
     }
 
     public function vendaProduto($codBarra) {

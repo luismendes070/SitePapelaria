@@ -8,7 +8,7 @@
 /**
  * Description of Pedido
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class Pedido {
     

@@ -8,7 +8,7 @@
 /**
  * Description of Produto
  *
- * @author Luís Mendes
+ * @author Luis Mendes
  */
 class Produto {
 

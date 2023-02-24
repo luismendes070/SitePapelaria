@@ -1,7 +1,7 @@
-<html>
+<html lang="pt-BR">
     <head>
         <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="http://localhost/SitePapelaria/css/estilo.css">
     </head>
     <body>
@@ -17,10 +17,10 @@
                 $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
                 if ($conexao->connect_errno) {
-                    echo "Erro de conex�o";
+                    echo "Erro de conexão";
                 }
 
-                $palavra = "caderno universit�rio";
+                $palavra = "caderno universitário";
                 $query = "SELECT * FROM produto WHERE nome LIKE '%" . $palavra . "%' ORDER BY nome";
 
                 $codigoBarrasProduto = "123456";
@@ -29,7 +29,7 @@
 
                     while ($row = $result->fetch_array()) {
 
-                        echo "C�digo: ";
+                        echo "Código: ";
                         printf(" %s", $row[0]);
                         $cod = $row[0];
                         echo "<br>";
