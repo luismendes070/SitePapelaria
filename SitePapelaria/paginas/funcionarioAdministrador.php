@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-BR">
     <head>
         <title>Administrador</title>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -16,13 +16,13 @@
             echo $_SESSION['nomeUsuario'];
             ?>
 
-            <a href="sessao.php">Sessão</a>
+            <a href="sessao.php">SessÃ£o</a>
 
         </div>
 
         <div id="divAdministrador">
 
-            <p><a href="./funcionario.php">Funcionários</a></p>
+            <p><a href="./funcionario.php">FuncionÃ¡rios</a></p>
             <p><a href="./fornecedor.php">Fornecedores</a></p>
             <p><a href="./produto.php">Produtos</a></p>
             <p><a href="./mostrarClientes.php">Clientes</a></p>

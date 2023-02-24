@@ -1,6 +1,6 @@
-<html>
+<html lang="pt-BR">
     <head>
-        <title></title>
+        <title>Venda</title>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link rel="stylesheet" type="text/css" href="http://localhost/SitePapelaria/css/estilo.css">
     </head>
@@ -16,7 +16,7 @@
                     $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
                     if ($conexao->connect_errno) {
-                        echo "Erro de conexão";
+                        echo "Erro de conexï¿½o";
                     }
 
                     $query = "SELECT * FROM cliente;";
@@ -43,12 +43,12 @@
                     <input type = "text" size = "11" name = "quantidadeProduto">
                 </p>
 
-                <p>Código de barras do produto
+                <p>CÃ³digo de barras do produto
                     <?php
                     $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
                     if ($conexao->connect_errno) {
-                        echo "Erro de conexão";
+                        echo "Erro de conexÃ£o";
                     }
 
                     $query = "SELECT * FROM produto;";
@@ -71,12 +71,12 @@
                     ?>
                 </p>
 
-                <p>CPF do funcionário
+                <p>CPF do funcionï¿½rio
                     <?php
                     $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
                     if ($conexao->connect_errno) {
-                        echo "Erro de conexão";
+                        echo "Erro de conexï¿½o";
                     }
 
                     $query = "SELECT * FROM funcionario;";

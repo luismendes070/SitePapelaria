@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html" charset="ISO-8859-1">
@@ -24,7 +25,7 @@
             echo "</head>";
 
             echo "<body>";
-            echo "<h2>Usuário não encontrado!</h2>";
+            echo "<h2>UsuÃ¡rio nÃ£o encontrado!</h2>";
 
             echo '<p>
                         <a href="http://localhost/SitePapelaria/index.html">Voltar
@@ -42,7 +43,7 @@
                 echo "</head>";
 
                 echo "<body>";
-                echo "<h2>A senha está incorreta!</h2>";
+                echo "<h2>A senha estÃ¡ incorreta!</h2>";
 
                 echo '<p>
                                 <a href="http://localhost/SitePapelaria/index.html">Voltar
@@ -51,7 +52,7 @@
                 echo "</body>";
                 echo "</html>";
             } else {
-                session_start(); // Inicia a sessão 
+                session_start(); // Inicia a sessÃ£o 
                 $_SESSION['nomeUsuario'] = $nomeUsuario;
                 $_SESSION['senha'] = $senha;
 

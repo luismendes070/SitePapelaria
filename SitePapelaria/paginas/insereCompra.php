@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-BR">
     <head>
         <title></title>
 
@@ -15,7 +15,7 @@
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
-                echo "Erro de conex„o";
+                echo "Erro de conex√£o";
             }
 
             $query = "SELECT * FROM cliente WHERE cpf like'" . $cpfCliente . "';";
@@ -39,7 +39,7 @@
         $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
         if ($conexao->connect_errno) {
-            echo "Erro de conex„o";
+            echo "Erro de conex√£o";
         }
 
         $cpfCliente = $_POST["cpfCliente"];
@@ -83,7 +83,7 @@ dataVenda)
 
             $conexao->close();
         } else {
-            echo "<h1>CPF n„o cadastrado!</h1>";
+            echo "<h1>CPF n√£o cadastrado!</h1>";
             echo '<p><a href="http://localhost/SitePapelaria/paginas/cliente.php">Cadastrar Cliente</a></p>';
             echo '<a href="http://localhost/SitePapelaria/index.php">Home</a>';
         }

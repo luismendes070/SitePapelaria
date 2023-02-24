@@ -8,9 +8,8 @@
 
         <form method="GET" action="comprar.php">
             <div id="divProdutoQualquer">
-
-                <img src="http://localhost/SitePapelaria/imagens/produtos/pendrive8gb.jpg" 
-                     alt="Pen drive 8 GB" width="180" height="180">
+                
+            <img src="http://localhost/SitePapelaria/imagens/produtos/pendrive8gb.jpg" alt="Pen drive 8 GB" width="180" height="180">
 
                 <?php
                 $conexao = new mysqli("localhost", "root", "", "papelaria2");

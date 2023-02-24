@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-BR">
     <head>
         <title></title>
 

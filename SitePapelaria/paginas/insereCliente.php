@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-BR">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
         <link rel="stylesheet" type="text/css" href="http://localhost/SitePapelaria/css/estilo.css">
@@ -6,10 +6,11 @@
     <body>
 
         <?php
+        
         $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
         if ($conexao->connect_errno) {
-            echo "Erro de conex�o";
+            echo "Erro de conexão";
         }
 
         function buscaCPFCadastrado($cpf) {
@@ -19,7 +20,7 @@
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
-                echo "Erro de conex�o";
+                echo "Erro de conexão";
             }
 
             $query = 'SELECT * FROM cliente WHERE cpf ="' . $cpf . '";';
@@ -102,7 +103,7 @@
 
             if ($result = $conexao->query($query)) {
 
-                echo '<h1>Agora voc� j� � nosso cliente!<h1>';
+                echo '<h1>Agora você j� � nosso cliente!<h1>';
             } else {
                 echo '<h1>Erro!<h1>';
             }

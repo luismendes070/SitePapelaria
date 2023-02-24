@@ -40,7 +40,12 @@
 
         <div id="divMenuLateral">
             <?php
-            // PHP PDO
+            
+try { 
+
+    // header('Content-type: text/plain; charset=utf-8');
+
+// PHP PDO
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
@@ -58,8 +63,11 @@
 
                 while ($row = $result->fetch_array()) {
 
+                    echo "produto em row[0]";
+                    echo $row[0];
+
                     echo "<li>";
-                    $nomeProduto = "<a href=http://localhost/SitePapelaria/paginas/" . geraLinkProduto($row [0])
+                    $nomeProduto = "<a href=http://localhost/SitePapelaria/paginas/" . geraLinkProduto($row[0])
                             . ".php>" . $row [0] . "</a>"; // Link do nome dos produtos no menu
 
                     echo $nomeProduto;
@@ -69,12 +77,26 @@
             echo "<ul>";
 
             $conexao->close();
+
+}catch(Exception $e){
+
+    echo "Products PHP Exception";
+
+}finally{
+
+}
+
             ?>
         </div>    
 
         <div id="principal">
 
             <?php
+            
+try {
+
+            header('Content-type: text/plain; charset=utf-8');
+
             $conexao = new mysqli("localhost", "root", "", "papelaria2");
 
             if ($conexao->connect_errno) {
@@ -98,6 +120,16 @@
                 }
             }
             $conexao->close();
+
+}catch(Exception $e){
+
+echo "Products PHP Exception";
+
+}
+finally{
+
+}
+
             ?>
         </div>
     </div>
@@ -105,6 +137,8 @@
         <?php
 
         try {
+
+        header('Content-type: text/plain; charset=utf-8');
 
         $teste = "te sT�";
 

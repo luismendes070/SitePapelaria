@@ -7,7 +7,7 @@
         <div id="divSessao">
 
             <form method="POST" action="encerraSessao.php">
-                <p><a href="http://localhost/SitePapelaria/index.php">Mudar de usu�rio</a></p>
+                <p><a href="http://localhost/SitePapelaria/index.php">Mudar de usuário</a></p>
                 <p><a href="http://localhost/SitePapelaria/index.php">Sair</a></p>
             </form>
         </div>
