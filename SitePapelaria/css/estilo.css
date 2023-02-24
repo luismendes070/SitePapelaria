@@ -1,0 +1,330 @@
+body{
+    /*background-color:#F60;*/
+    background: white;
+    padding:0px;
+    padding-left: 10px;
+    margin:0px;
+    padding-top: 10px;
+}
+
+#menu ul {
+                    padding-left: 450px;
+                    margin:0px;
+                    float: left;
+                    width: 100%;
+                    background-color:#EDEDED;
+                    list-style:none;
+                    font:100% Tahoma;
+                }
+
+                #menu ul li { display: inline; }
+
+                #menu ul li a {
+                    background-color:#EDEDED;
+                    color: #333;
+                    text-decoration: none;
+                    border-bottom:3px solid #EDEDED;
+                    padding: 2px 10px;
+                    float:left;
+                }
+
+                #menu ul li a:hover {
+                    background-color:#D6D6D6;
+                    color: #6D6D6D;
+                    border-bottom:3px solid #EA0000;
+                }
+
+#cabecalho {
+    height: 60px;
+}
+
+#divCadastroCliente{
+    text-align: center;
+}
+
+#divContato{
+    text-align: center;
+}
+
+#divLogin {
+
+    text-align: center;
+    
+}
+
+#divMenuLateral {
+    float: left;
+    
+}
+
+#divNovoCadastrado{
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    background: #F60;
+    padding-left: 30px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#divProdutoQualquer{
+    
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    background: #F60;
+    padding-left: 30px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#divSenhaIncorreta{
+    text-align: center;
+}
+
+#logomarcaCabecalho {
+    margin: 0px;
+    padding: 0px;
+}
+
+#principal{
+
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+#tudo{
+    width: 1300px;
+}
+
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;  
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:226px;
+}
+
+#btnBusca{
+    float:left;
+    cursor:pointer;
+}
+
+#divAdministrador{
+    margin: 0 auto;
+    text-align: center;
+    background: #F60;
+    padding-left: 30px;
+    width: 43%;
+    border-radius: 10px;
+}
+
+
+#divBusca img{
+    float:left;
+}
+
+#divBusca{
+    border:solid 10px rgba(47, 79, 79, 0.8);
+    border-radius:10px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    position: absolute;
+    left: 450px; /* posiciona a 90px para a esquerda */
+    top: 75px; /* posiciona a 70px para baixo */
+}
+
+#divEstoque{
+    margin: 0 0 auto;
+    background: green;
+}
+
+#divLateral{
+    background-color : #F60;
+}
+
+#divTopo{
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    background: #F60;
+    width: 43%;
+    border-radius: 10px;
+}
+
+#divVenda{
+    margin-left: 28%;
+    text-align: center;;
+    border-radius: 10px;
+    background: #F60;
+    padding-left: 30px;
+    width: 48%;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+#divUsuarioLogado{
+    text-align: right;
+    margin: 0 auto;
+    background: #F60;
+    padding-right: 30px;
+    width: 43%;
+    border-radius: 10px;
+}
+
+h1{
+    background: #F60;
+    padding-left: 30px;
+    width: 18%;
+}
+
+h2{
+    background: #F60; 
+}
+
+input[type="text"], input[type="password"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    border-radius: 4px; 
+    font-size: 15px;
+}
+
+li:hover{
+    margin:0;
+    padding:0;
+    border: 1px solid black;
+    background-color: orange;
+    color: white;
+}
+
+#logoPapelaria{
+    margin:0;
+    padding:0;
+    list-style-image: url(imagens/papelaria.png); 
+    list-style: none;
+}
+
+#novoProduto{
+
+}
+
+#divProdutoBuscado{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    width: 500px;
+    border-radius: 4px;
+    background-color: #F60;
+}
+
+
+
+#ulMenuLateral{
+    margin:0 auto;
+    padding:0;
+    font-size: 18px;
+    list-style: none;
+}
+
+#divCaneta{
+    text-align: center;
+}
+
+#divFazerLogin{
+    float:right;
+}
+
+#divSessao{
+    text-align: center;
+    
+}
+
+#divTabela{
+
+    margin: 0 auto;
+    padding: 0;
+    background-color: yellow;
+    text-align: center;
+    border-style: solid;
+    width: 610px;
+}
+
+#divTabelaFuncionario{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    border-style: solid;
+    width: 610px;
+}
+
+#divTabelaFornecedor{
+
+    margin: 0 auto;
+    padding: 0;
+    background-color: yellow;
+    text-align: center;
+    border-style: solid;
+    width: 910px;
+}
+
+#divTabelaClientes{
+    margin: 0 auto;
+    padding: 0;
+    background-color: yellow;
+    text-align: center;
+    border-style: solid;
+    width: 1350px; 
+}
+
+#divTabelaProdutos{
+    margin: 0 auto;
+    padding: 0;
+    background-color: yellow;
+    text-align: center;
+    border-style: solid;
+    width: 1300px; 
+}
+
+#divTabelaVendas{
+    margin: 0 auto;
+    padding: 0;
+    background-color: yellow;
+    text-align: center;
+    border-style: solid;
+    width: 850px; 
+}
+
+select{
+    font-size: 14px;
+}
+
+th{
+    color: blue;
+    font-size: 22px;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    font-size: 18px;
+}
+
+tr{
+    text-align: center;
+}
